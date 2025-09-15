@@ -36,6 +36,7 @@ CREATE TABLE `mahasiswa` (
 ```
 
 ### Fields Description:
+
 - `id`: Auto-increment primary key
 - `nama`: Student's full name
 - `no_mhs`: Student ID number (unique)
@@ -46,6 +47,7 @@ CREATE TABLE `mahasiswa` (
 ## 🚀 Installation & Setup
 
 ### Prerequisites
+
 - XAMPP (or similar PHP development environment)
 - Web browser
 - Text editor/IDE
@@ -53,29 +55,35 @@ CREATE TABLE `mahasiswa` (
 ### Step-by-Step Installation
 
 1. **Download and Install XAMPP**
+
    - Download from [https://www.apachefriends.org/](https://www.apachefriends.org/)
    - Install and start Apache and MySQL services
 
 2. **Clone/Download the Project**
+
    ```bash
    # Clone the repository
    git clone https://github.com/wyattmatt/Pratikum-CRUD.git
-   
+
    # Or download and extract to XAMPP htdocs folder
    ```
 
 3. **Place Project Files**
+
    - Copy the project folder to `C:\xampp\htdocs\test\`
    - Ensure all files are in the correct location
 
 4. **Database Setup**
+
    - Open phpMyAdmin: `http://localhost/phpmyadmin`
    - Create a new database named `mahasiswa_db`
    - Import the provided SQL file: `mahasiswa_db.sql`
    - The database will be populated with sample student data
 
 5. **Configure Database Connection**
+
    - Check `connection.php` file for database settings:
+
    ```php
    $servername = "localhost";
    $username = "root";
@@ -109,11 +117,13 @@ test/
 ## 💻 Usage Guide
 
 ### Viewing Students
+
 - Navigate to `index.php` to see all registered students
 - Student information is displayed in a table with photos
 - Each row shows: ID, Name, Student Number, Department, Email, Photo, and Actions
 
 ### Adding a New Student
+
 1. Click "Tambah Mahasiswa" button on the main page
 2. Fill in all required fields:
    - Name (Nama)
@@ -124,12 +134,14 @@ test/
 3. Click "Simpan" to save the new student
 
 ### Editing Student Information
+
 1. Click "Edit" link next to any student record
 2. Update the desired fields
 3. Optionally upload a new photo
 4. Click "Simpan" to save changes
 
 ### Deleting a Student
+
 1. Click "Delete" link next to any student record
 2. Review the student information on the confirmation page
 3. Click "Hapus" to permanently delete the record
@@ -137,6 +149,7 @@ test/
 ## 🎯 Learning Objectives
 
 This project demonstrates:
+
 - **PHP Fundamentals**: Variables, arrays, loops, conditionals
 - **Database Operations**: CRUD operations with MySQL
 - **File Handling**: Image upload and storage
@@ -147,6 +160,7 @@ This project demonstrates:
 ## ⚠️ Security Considerations
 
 **Note**: This project is designed for educational purposes. For production use, consider implementing:
+
 - Prepared statements to prevent SQL injection
 - Input validation and sanitization
 - File upload security (type checking, size limits)
@@ -157,6 +171,7 @@ This project demonstrates:
 ## 🤝 Contributing
 
 This is an educational project. Feel free to:
+
 - Fork the repository
 - Add new features
 - Improve the UI/UX
@@ -176,6 +191,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Support
 
 If you encounter any issues or have questions:
+
 1. Check the installation steps
 2. Ensure XAMPP services are running
 3. Verify database connection settings
